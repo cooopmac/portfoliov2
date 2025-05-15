@@ -64,7 +64,7 @@ const LeftPanel = () => {
   }, []);
 
   return (
-    <div className="flex-1 border-r border-neutral-800">
+    <div className="flex-1 flex flex-col border-r border-neutral-800">
       <div className="flex border-b border-neutral-800 space-x-4 items-center p-4">
         <div className="relative">
           <img
@@ -181,6 +181,13 @@ const LeftPanel = () => {
               transition: "transform 0.5s",
             }}
           />
+        </div>
+      </div>
+      <div className="flex-1 flex items-center justify-center p-4">
+        <div className="w-full max-w-md bg-neutral-900/50 rounded-lg p-6 border border-dashed border-neutral-800 flex flex-col items-center justify-center">
+          <h3 className="text-xl font-semibold font-pixel text-neutral-500">
+            coming soon...
+          </h3>
         </div>
       </div>
     </div>
