@@ -9,24 +9,18 @@ const RightPanel = ({ selectedNode }: RightPanelProps) => {
     return (
       <div className="flex-1 border-l border-neutral-800 flex items-center justify-center p-6">
         <p className="text-neutral-500 font-pixel text-sm">
-          Click folder to display
+          Select a file to view
         </p>
       </div>
     );
   }
 
   if (selectedNode.type === "folder") {
-    if (!selectedNode.children || selectedNode.children.length === 0) {
-      return (
-        <div className="flex-1 border-l border-neutral-800 flex items-center justify-center p-6">
-          <p className="text-neutral-500 font-pixel text-sm">Folder is empty</p>
-        </div>
-      );
-    }
-
     return (
       <div className="flex-1 border-l border-neutral-800 flex items-center justify-center p-6">
-        <p className="text-neutral-500 font-pixel text-sm"></p>
+        <p className="text-neutral-500 font-pixel text-sm">
+          Select a file to view
+        </p>
       </div>
     );
   }

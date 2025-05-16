@@ -104,7 +104,7 @@ const ArrowDownIcon = () => (
 interface TreeNodeProps {
   node: FileNode;
   level?: number;
-  onSelect: (node: FileNode) => void;
+  onSelect: (node: FileNode | null) => void;
   selectedNode: FileNode | null;
 }
 
@@ -126,8 +126,8 @@ const TreeNode = ({
             }`}
           onClick={(e) => {
             e.stopPropagation();
-            setOpen((o) => !o);
-            onSelect(node);
+            setOpen(!open);
+            // Don't select folders for display anymore
           }}
         >
           {open ? <OpenFolderIcon /> : <FolderIcon />}
@@ -223,7 +223,7 @@ interface FileExplorerProps {
 const FileExplorer = ({ onSelectNode }: FileExplorerProps) => {
   const [selectedNode, setSelectedNode] = useState<FileNode | null>(null);
 
-  const handleSelectNode = (node: FileNode) => {
+  const handleSelectNode = (node: FileNode | null) => {
     setSelectedNode(node);
     onSelectNode(node);
   };
