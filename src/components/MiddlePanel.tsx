@@ -1,6 +1,7 @@
 import FileExplorer from "./FileExplorer";
 import type { FileNode } from "./FileExplorer";
 import type { Dispatch, SetStateAction } from "react";
+import Terminal from "./Terminal";
 
 interface MiddlePanelProps {
   onSelectNode: Dispatch<SetStateAction<FileNode | null>>;
@@ -16,7 +17,10 @@ const MiddlePanel = ({ onSelectNode }: MiddlePanelProps) => {
           <span>cooper's files</span>
         </div>
       </div>
-      <FileExplorer onSelectNode={onSelectNode} />
+      <div className="flex-1 overflow-y-auto">
+        <FileExplorer onSelectNode={onSelectNode} />
+        <Terminal />
+      </div>
     </div>
   );
 };
