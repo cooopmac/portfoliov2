@@ -5,6 +5,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import threeDLogo from "../assets/3dlogo.png";
 import threeDLogo2 from "../assets/star3d.png";
+import { GlowingEffect } from "./ui/glowing-effect";
 
 interface SpotifyTrack {
   name: string;
@@ -84,7 +85,15 @@ const LeftPanel = () => {
         </div>
       </div>
       <div className="flex border-b border-neutral-800 p-4 gap-4">
-        <div className="flex-1 flex flex-row justify-between h-20 border border-neutral-800 rounded-lg p-1 pr-2 pl-2 py-2 gap-2">
+        <div className="relative flex-1 flex flex-row justify-between h-20 border border-neutral-800 rounded-lg p-1 pr-2 pl-2 py-2 gap-2">
+          <GlowingEffect
+            spread={40}
+            glow={true}
+            disabled={false}
+            proximity={64}
+            inactiveZone={0.01}
+            borderWidth={3}
+          />
           <div className="flex flex-col justify-center">
             <div className="text-neutral-500 truncate text-sm font-pixel">
               listening to:
@@ -116,7 +125,15 @@ const LeftPanel = () => {
             </div>
           )}
         </div>
-        <div className="flex-1 flex h-20 border border-neutral-800 rounded-lg">
+        <div className="relative flex-1 flex h-20 border border-neutral-800 rounded-lg">
+          <GlowingEffect
+            spread={40}
+            glow={true}
+            disabled={false}
+            proximity={64}
+            inactiveZone={0.01}
+            borderWidth={3}
+          />
           <div className="flex flex-col pl-2 py-1">
             <div className="font-pixel text-neutral-500 text-sm">
               contact me:
