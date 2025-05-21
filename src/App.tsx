@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <div className="flex flex-col lg:flex-row flex-1">
+      <div className="flex flex-col lg:flex-row flex-1 lg:overflow-hidden">
         <LeftPanel />
         <MiddlePanel onSelectNode={setSelectedNode} />
         <RightPanel selectedNode={selectedNode} />

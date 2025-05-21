@@ -9,7 +9,7 @@ interface MiddlePanelProps {
 
 const MiddlePanel = ({ onSelectNode }: MiddlePanelProps) => {
   return (
-    <div className="w-full lg:w-1/3 border-b lg:border-b-0 lg:border-l border-neutral-800 flex flex-col panel-height">
+    <div className="w-full lg:w-1/3 border-b lg:border-b-0 lg:border-x border-neutral-800 flex flex-col panel-height lg:min-h-[calc(100vh-3rem)]">
       <div className="border-b border-dashed border-neutral-800 py-4 px-2">
         <div className="flex items-center text-sm font-pixel">
           <span className="text-gray-500">Home</span>

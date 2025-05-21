@@ -8,6 +8,12 @@
 }
 
 @layer base {
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
   html {
     font-family: "Inter", sans-serif;
     overflow: hidden; /* Prevent scrolling on html */
@@ -20,11 +26,28 @@ body {
   overflow: hidden; /* Prevent scrolling on body */
 }
 
+@media (max-width: 1023px) {
+  html,
+  body {
+    overflow-y: auto !important; /* Force scrolling on small screens */
+    height: auto !important;
+    min-height: 100%;
+  }
+}
+
 /* Panel height for consistent sizing */
 .panel-height {
   height: calc(100vh - 3rem); /* Adjust based on footer height */
   max-height: calc(100vh - 3rem);
-  overflow: hidden; /* Prevent panel from causing overall page resize */
+  overflow: auto; /* Allow scrolling within panels */
+}
+
+@media (max-width: 1023px) {
+  .panel-height {
+    height: auto !important;
+    min-height: auto !important;
+    max-height: none !important;
+  }
 }
 
 /* Markdown content styling */
