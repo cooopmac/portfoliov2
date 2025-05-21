@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import MiddlePanel from "./components/MiddlePanel";
 import RightPanel from "./components/RightPanel";
 import type { FileNode } from "./components/FileExplorer";
+import "./index.css";
 
 function App() {
   const [selectedNode, setSelectedNode] = useState<FileNode | null>(null);
