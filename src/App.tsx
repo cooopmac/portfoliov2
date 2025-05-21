@@ -9,8 +9,8 @@ function App() {
   const [selectedNode, setSelectedNode] = useState<FileNode | null>(null);
 
   return (
-    <div className="h-screen flex flex-col overflow-hidden">
-      <div className="flex flex-col md:flex-row flex-1 min-h-0 overflow-y-auto md:overflow-hidden">
+    <div className="min-h-screen flex flex-col">
+      <div className="flex flex-col lg:flex-row flex-1 overflow-y-auto">
         <LeftPanel />
         <MiddlePanel onSelectNode={setSelectedNode} />
         <RightPanel selectedNode={selectedNode} />

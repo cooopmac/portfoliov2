@@ -84,17 +84,17 @@ const files: FileNode[] = [
           },
         ],
       },
+    ],
+  },
+  {
+    type: "folder",
+    name: "contact",
+    children: [
       {
-        type: "folder",
-        name: "contact",
-        children: [
-          {
-            type: "file",
-            name: "contact_info.md",
-            content:
-              "# Contact Information\n\n- Email: cooper.macgregor14@gmail.com\n- Phone: (705) 443-7166\n- LinkedIn: linkedin.com/in/cooper-macgregor\n- GitHub: github.com/cooopmac",
-          },
-        ],
+        type: "file",
+        name: "contact_info.md",
+        content:
+          "# Contact Information\n\n- Email: cooper.macgregor14@gmail.com\n- Phone: (705) 443-7166\n- LinkedIn: linkedin.com/in/cooper-macgregor\n- GitHub: github.com/cooopmac",
       },
     ],
   },
@@ -283,7 +283,7 @@ const FileExplorer = ({ onSelectNode }: FileExplorerProps) => {
   };
 
   return (
-    <div className="p-4 pb-8">
+    <div className="p-4 pb-4">
       {files.map((item, idx) => (
         <TreeNode
           key={item.name + idx}

@@ -152,7 +152,7 @@ const Terminal = () => {
 
   return (
     <div
-      className="mt-4 mx-4 h-56 bg-neutral-900 rounded-md border border-neutral-800 overflow-hidden flex flex-col relative"
+      className="my-4 mx-4 h-56 bg-neutral-900 rounded-md border border-neutral-800 overflow-hidden flex flex-col relative"
       onClick={focusInput}
     >
       <div className="bg-neutral-800 px-4 py-2 flex items-center relative">

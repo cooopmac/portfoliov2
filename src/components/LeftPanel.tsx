@@ -65,7 +65,7 @@ const LeftPanel = () => {
   }, []);
 
   return (
-    <div className="w-full md:flex-1 flex flex-col border-r border-neutral-800">
+    <div className="w-full lg:w-1/3 flex flex-col border-b lg:border-b-0 lg:border-r border-neutral-800 panel-height">
       <div className="flex border-b border-neutral-800 space-x-4 items-center p-4">
         <div className="relative">
           <img
