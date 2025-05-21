@@ -4,14 +4,13 @@ import Footer from "./components/Footer";
 import MiddlePanel from "./components/MiddlePanel";
 import RightPanel from "./components/RightPanel";
 import type { FileNode } from "./components/FileExplorer";
-import "./index.css";
 
 function App() {
   const [selectedNode, setSelectedNode] = useState<FileNode | null>(null);
 
   return (
     <div className="min-h-screen flex flex-col">
-      <div className="flex flex-col lg:flex-row flex-1 overflow-y-auto">
+      <div className="flex flex-col lg:flex-row flex-1">
         <LeftPanel />
         <MiddlePanel onSelectNode={setSelectedNode} />
         <RightPanel selectedNode={selectedNode} />

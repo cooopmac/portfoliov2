@@ -5,10 +5,8 @@ module.exports = {
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
     "./app/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx,css}",
-    "./src/index.css",
+    "./src/**/*.{ts,tsx}",
   ],
-  safelist: ["font-pixel"],
   prefix: "",
   theme: {
     container: {
@@ -20,7 +18,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        pixel: ["Jersey 10", "monospace"],
+        pixel: ["VT323", "monospace"],
       },
       colors: {
         border: "hsl(var(--border))",

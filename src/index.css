@@ -1,24 +1,30 @@
 @import "tailwindcss";
 @import "tw-animate-css";
-@import url("https://fonts.googleapis.com/css2?family=Jersey+10&display=swap");
 
 @custom-variant dark (&:is(.dark *));
 
 @layer utilities {
-  .font-pixel {
-    font-family: "Jersey 10", "Courier New", monospace;
-  }
+  /* Removed font-pixel class to use default fonts */
 }
 
 @layer base {
   html {
     font-family: "Inter", sans-serif;
+    overflow: hidden; /* Prevent scrolling on html */
   }
 }
 
 body {
   background-color: #121212;
   color: #fff;
+  overflow: hidden; /* Prevent scrolling on body */
+}
+
+/* Panel height for consistent sizing */
+.panel-height {
+  height: calc(100vh - 3rem); /* Adjust based on footer height */
+  max-height: calc(100vh - 3rem);
+  overflow: hidden; /* Prevent panel from causing overall page resize */
 }
 
 /* Markdown content styling */
@@ -27,7 +33,7 @@ body {
 }
 
 .markdown-content h1 {
-  @apply text-2xl font-bold mb-4 text-neutral-100 font-pixel;
+  @apply text-2xl font-bold mb-4 text-neutral-100;
   @apply border-b border-neutral-800 pb-2;
 }
 
@@ -107,8 +113,8 @@ body {
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
-  --color-sky-500: var(----sky-500);
-  --color-sky-400: var(----sky-400);
+  --color-sky-500: var(--sky-500);
+  --color-sky-400: var(--sky-400);
 }
 
 :root {

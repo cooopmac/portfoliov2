@@ -92,6 +92,8 @@ const RightPanel = ({ selectedNode }: RightPanelProps) => {
         style={{
           scrollbarWidth: "thin",
           scrollbarColor: "#333 #1e1e1e",
+          overflowX: "hidden",
+          maxHeight: "100%",
         }}
       >
         {selectedNode.content ? (
@@ -109,6 +111,9 @@ const RightPanel = ({ selectedNode }: RightPanelProps) => {
               style={{
                 scrollbarWidth: "thin",
                 scrollbarColor: "#333 #1e1e1e",
+                width: "100%",
+                maxWidth: "100%",
+                overflowX: "auto",
               }}
             >
               <ReactMarkdown
