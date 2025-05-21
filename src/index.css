@@ -1,15 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
-
-/* Import the Jersey10 font */
-@font-face {
-  font-family: "Jersey10";
-  /* Optional font files - add these files to public/fonts if available */
-  src: local("monospace");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&display=swap");
 
 @custom-variant dark (&:is(.dark *));
 
