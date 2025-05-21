@@ -6,7 +6,6 @@ import codingImg from "../assets/coding.png";
 import traveltrek1Img from "../assets/traveltrek1.png";
 import traveltrek3Img from "../assets/traveltrek3.png";
 import autovisionImg from "../assets/autovison888.png";
-import soulkeeper2Img from "../assets/soulkeeper2.png";
 
 export type FileNode =
   | {
