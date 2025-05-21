@@ -78,23 +78,6 @@ const RightPanel = ({ selectedNode }: RightPanelProps) => {
     );
   }
 
-  const getFileIcon = (filename: string) => {
-    if (filename.includes("experience")) return "💼";
-    if (filename.includes("education")) return "🎓";
-    if (filename.includes("skills")) return "🛠️";
-    if (filename.includes("about")) return "👨‍💻";
-    if (filename.includes("contact")) return "📱";
-    if (
-      filename.includes("project") ||
-      filename.includes("auto") ||
-      filename.includes("compiler")
-    )
-      return "🚀";
-    if (filename.includes("tech") || filename.includes("stack")) return "⚙️";
-    if (filename.includes("learning")) return "📚";
-    return "📄";
-  };
-
   return (
     <div className="w-full lg:w-1/3 border-b lg:border-b-0 lg:border-l border-neutral-800 flex flex-col bg-gradient-to-br from-neutral-950 to-neutral-900 panel-height">
       <div className="border-b border-dashed border-neutral-800 py-4 px-2">

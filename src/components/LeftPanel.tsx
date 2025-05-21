@@ -46,9 +46,7 @@ const LeftPanel = () => {
 
   const fetchCurrentlyPlaying = async () => {
     try {
-      const response = await axios.get(
-        "http://127.0.0.1:3000/api/currently-playing"
-      );
+      const response = await axios.get("/api/currently-playing");
       if (response.data && response.data.item) {
         setCurrentlyPlaying(response.data.item);
       }
