@@ -20,7 +20,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        pixel: ["Jersey10", "monospace"],
+        pixel: ["Jersey 10", "monospace"],
       },
       colors: {
         border: "hsl(var(--border))",
