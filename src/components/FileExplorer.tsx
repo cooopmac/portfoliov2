@@ -70,7 +70,7 @@ const files: FileNode[] = [
           {
             type: "file",
             name: "soul_keeper.md",
-            content: `# Soul Keeper\n*March 2024*\n\n**Unity, C#, 3D Game Development**\n\n<div style="margin-bottom: 20px;">\n  <img src="${soulkeeper2Img}" alt="Soul Keeper Combat" style="width: 100%; border-radius: 8px; border: 1px solid #333;" />\n</div>\n\n- Developed a 3D action game where players collect souls from defeated enemies to upgrade abilities, featuring a complete combat system with projectile attacks and special abilities\n- Implemented a robust progression system with four upgradable stats (Attack, Speed, Dexterity, Wisdom) that meaningfully impact gameplay, alongside three distinct enemy types with unique AI behaviors\n- Created immersive gameplay with custom particle effects, 3D physics interactions, and a modular codebase design that allows for easy expansion of game features`,
+            content: `# Soul Keeper\n*March 2024*\n\n**Unity, C#, 3D Game Development**\n\n<div style="margin-bottom: 20px;">\n  <img src="" alt="Soul Keeper Combat" style="width: 100%; border-radius: 8px; border: 1px solid #333;" />\n</div>\n\n- Developed a 3D action game where players collect souls from defeated enemies to upgrade abilities, featuring a complete combat system with projectile attacks and special abilities\n- Implemented a robust progression system with four upgradable stats (Attack, Speed, Dexterity, Wisdom) that meaningfully impact gameplay, alongside three distinct enemy types with unique AI behaviors\n- Created immersive gameplay with custom particle effects, 3D physics interactions, and a modular codebase design that allows for easy expansion of game features`,
           },
           {
             type: "file",
