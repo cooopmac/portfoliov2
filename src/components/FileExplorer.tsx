@@ -1,6 +1,13 @@
 import { useState } from "react";
 import type { Dispatch, SetStateAction } from "react";
 
+// Import all images
+import codingImg from "../assets/coding.png";
+import traveltrek1Img from "../assets/traveltrek1.png";
+import traveltrek3Img from "../assets/traveltrek3.png";
+import autovisionImg from "../assets/autovison888.png";
+import soulkeeper2Img from "../assets/soulkeeper2.png";
+
 export type FileNode =
   | {
       type: "folder";
@@ -25,8 +32,7 @@ const files: FileNode[] = [
           {
             type: "file",
             name: "about_me.md",
-            content:
-              "# Cooper MacGregor\n\n![Coding](/src/assets/coding.png)\n\nFull-stack developer passionate about building clean, efficient applications. Currently completing my B.S in Computer Science with a Minor in Business at the University of Guelph.\n\nI'm a problem solver at heart with a knack for creating intuitive, high-performance software solutions that make a real impact. From AI-powered tools to full-stack platforms, I enjoy tackling complex challenges with clean code.",
+            content: `# Cooper MacGregor\n\n![Coding](${codingImg})\n\nFull-stack developer passionate about building clean, efficient applications. Currently completing my B.S in Computer Science with a Minor in Business at the University of Guelph.\n\nI'm a problem solver at heart with a knack for creating intuitive, high-performance software solutions that make a real impact. From AI-powered tools to full-stack platforms, I enjoy tackling complex challenges with clean code.`,
           },
           {
             type: "file",
@@ -55,20 +61,17 @@ const files: FileNode[] = [
           {
             type: "file",
             name: "traveltrek.md",
-            content:
-              '# TravelTrek\n*February 2025*\n\n**Flutter, Supabase, Geolocator**\n\n<div style="display: flex; justify-content: space-between; gap: 16px; flex-wrap: nowrap; margin-bottom: 20px;">\n  <img src="/src/assets/traveltrek1.png" alt="TravelTrek App - Earth View" style="width: 49%; border-radius: 8px; border: 1px solid #333;" />\n  <img src="/src/assets/traveltrek3.png" alt="TravelTrek App - User Profile" style="width: 49%; border-radius: 8px; border: 1px solid #333;" />\n</div>\n\n- Engineered a cross-platform mobile application using **Flutter**, integrating a real-time interactive 3D Earth visualization for dynamic travel path and destination mapping, collaborating within a team of 3\n- Implemented a robust backend solution leveraging **Supabase** for secure user authentication, profile management, and scalable data storage, demonstrating proficiency in modern backend-as-a-service integration\n- Developed and integrated precise location services for automatic travel distance calculation and real-time user positioning on the globe, showcasing expertise in mobile sensor data processing and geospatial APIs',
+            content: `# TravelTrek\n*February 2025*\n\n**Flutter, Supabase, Geolocator**\n\n<div style="display: flex; justify-content: space-between; gap: 16px; flex-wrap: nowrap; margin-bottom: 20px;">\n  <img src="${traveltrek1Img}" alt="TravelTrek App - Earth View" style="width: 49%; border-radius: 8px; border: 1px solid #333;" />\n  <img src="${traveltrek3Img}" alt="TravelTrek App - User Profile" style="width: 49%; border-radius: 8px; border: 1px solid #333;" />\n</div>\n\n- Engineered a cross-platform mobile application using **Flutter**, integrating a real-time interactive 3D Earth visualization for dynamic travel path and destination mapping, collaborating within a team of 3\n- Implemented a robust backend solution leveraging **Supabase** for secure user authentication, profile management, and scalable data storage, demonstrating proficiency in modern backend-as-a-service integration\n- Developed and integrated precise location services for automatic travel distance calculation and real-time user positioning on the globe, showcasing expertise in mobile sensor data processing and geospatial APIs`,
           },
           {
             type: "file",
             name: "autovision.md",
-            content:
-              "# AutoVision\n*February 2025*\n\n**React, Supabase, OpenAI Vision, Stripe**\n\n![AutoVision Project](/src/assets/autovison.PNG)\n\n- Built a vision-powered web app that analyzes uploaded car images using **OpenAI Vision AI**, detects vehicle modifications, and suggests compatible aftermarket parts in real-time\n- Integrated Supabase (Auth, PostgreSQL, Edge Functions) for secure user management and subscription tracking; implemented **Stripe Checkout** with full subscription lifecycle handling via serverless webhooks\n- Designed a modern frontend using **React + TypeScript + Tailwind**, achieving responsive design, smooth animations (Framer Motion), and dynamic state management with React Context and custom hooks",
+            content: `# AutoVision\n*February 2025*\n\n**React, Supabase, OpenAI Vision, Stripe**\n\n![AutoVision Project](${autovisionImg})\n\n- Built a vision-powered web app that analyzes uploaded car images using **OpenAI Vision AI**, detects vehicle modifications, and suggests compatible aftermarket parts in real-time\n- Integrated Supabase (Auth, PostgreSQL, Edge Functions) for secure user management and subscription tracking; implemented **Stripe Checkout** with full subscription lifecycle handling via serverless webhooks\n- Designed a modern frontend using **React + TypeScript + Tailwind**, achieving responsive design, smooth animations (Framer Motion), and dynamic state management with React Context and custom hooks`,
           },
           {
             type: "file",
             name: "soul_keeper.md",
-            content:
-              '# Soul Keeper\n*March 2024*\n\n**Unity, C#, 3D Game Development**\n\n<div style="margin-bottom: 20px;">\n  <img src="/src/assets/soulkeeper2.PNG" alt="Soul Keeper Combat" style="width: 100%; border-radius: 8px; border: 1px solid #333;" />\n</div>\n\n- Developed a 3D action game where players collect souls from defeated enemies to upgrade abilities, featuring a complete combat system with projectile attacks and special abilities\n- Implemented a robust progression system with four upgradable stats (Attack, Speed, Dexterity, Wisdom) that meaningfully impact gameplay, alongside three distinct enemy types with unique AI behaviors\n- Created immersive gameplay with custom particle effects, 3D physics interactions, and a modular codebase design that allows for easy expansion of game features',
+            content: `# Soul Keeper\n*March 2024*\n\n**Unity, C#, 3D Game Development**\n\n<div style="margin-bottom: 20px;">\n  <img src="${soulkeeper2Img}" alt="Soul Keeper Combat" style="width: 100%; border-radius: 8px; border: 1px solid #333;" />\n</div>\n\n- Developed a 3D action game where players collect souls from defeated enemies to upgrade abilities, featuring a complete combat system with projectile attacks and special abilities\n- Implemented a robust progression system with four upgradable stats (Attack, Speed, Dexterity, Wisdom) that meaningfully impact gameplay, alongside three distinct enemy types with unique AI behaviors\n- Created immersive gameplay with custom particle effects, 3D physics interactions, and a modular codebase design that allows for easy expansion of game features`,
           },
           {
             type: "file",
