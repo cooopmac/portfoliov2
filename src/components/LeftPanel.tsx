@@ -53,7 +53,7 @@ const LeftPanel = () => {
         setCurrentlyPlaying(response.data.item);
       }
     } catch (error) {
-      console.error("Error fetching currently playing track:", error);
+      console.error("Error fetching currently playing track");
     }
   };
 
@@ -65,7 +65,7 @@ const LeftPanel = () => {
   }, []);
 
   return (
-    <div className="flex-1 flex flex-col border-r border-neutral-800">
+    <div className="w-full md:flex-1 flex flex-col border-r border-neutral-800">
       <div className="flex border-b border-neutral-800 space-x-4 items-center p-4">
         <div className="relative">
           <img
@@ -138,7 +138,7 @@ const LeftPanel = () => {
             <div className="font-pixel text-neutral-500 text-sm">
               contact me:
             </div>
-            <div className="text-sm">cooper.macgregor@gmail.com</div>
+            <div className="text-sm">cooper.macgregor14@gmail.com</div>
             <div className="pt-2 flex flex-row gap-4">
               <a
                 href="https://www.linkedin.com/in/cooper-macgregor"

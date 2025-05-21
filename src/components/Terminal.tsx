@@ -83,17 +83,25 @@ const Terminal = () => {
 
     if (cmd === "help") {
       output =
-        "Available commands: help, about, skills, projects, contact, clear, matrix";
+        "Available commands: help, about, skills, projects, contact, education, experience, clear, matrix";
     } else if (cmd === "about") {
       output =
-        "Hi! I'm Cooper, a full-stack developer passionate about building clean, efficient applications.";
+        "Hi! I'm Cooper, a full-stack developer currently completing my B.S in Computer Science with a Minor in Business at the University of Guelph. I'm passionate about building clean, efficient applications that solve real problems.";
     } else if (cmd === "skills") {
-      output = "JavaScript/TypeScript, React, Node.js, Python, C++, SQL, AWS";
+      output =
+        "Languages: C, C#, Java, JavaScript, TypeScript, Dart, SQL\nFrameworks: React, Node.js, Flutter, Next.js, Springboot\nTools: Docker, Kubernetes, Git, PostgreSQL, Unity\nMethodologies: Agile, TDD, CI/CD";
     } else if (cmd === "projects") {
       output =
-        "• AI-powered tools\n• Full-stack platforms\n• C compiler\n• This portfolio";
+        "• AutoVision - AI-powered car modification analyzer\n• TravelTrek - 3D Earth travel visualization app\n• C- Language Compiler\n• Full-stack claims system for auto garages\n• This portfolio";
     } else if (cmd === "contact") {
-      output = "Email: cooper.macgregor@gmail.com\nGitHub: cooopmac";
+      output =
+        "Email: cooper.macgregor4@gmail.com\nPhone: (705) 443-7166\nLinkedIn: linkedin.com/in/cooper-macgregor\nGitHub: cooopmac";
+    } else if (cmd === "education") {
+      output =
+        "University of Guelph (2021-2025)\nB.S in Computer Science, Minor in Business\nDean's List";
+    } else if (cmd === "experience") {
+      output =
+        "SolutionsLRP - Freelance Software Developer (May 2024 - Apr 2025)\nUniversity of Guelph - Scrum Master (Jan 2023 - Apr 2023)";
     } else if (cmd === "matrix") {
       output = "Entering the Matrix...";
       // Show matrix effect only for this command
